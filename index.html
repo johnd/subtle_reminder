@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Subtle Reminder App</title>
+		<link rel="stylesheet" href="css/ratchet.css">
+		<style type="text/css">
+/* overrides */
+		* { -webkit-user-select: none; }
+		.configure-content { bottom: 43px; }
+		.content .table-view { margin: 0 !important; }
+		.table-view-cell a:focus { background: rgba(0,0,0,.05);}
+		ul, code {font-size: 14px; color: #777;}
+		.badge { padding: 5px 8px; border-radius: 3px; }
+		.cursor-pointer { cursor: pointer; }
+		</style>
+
+	</head>
+	<body>
+		<header class="bar bar-nav">
+			<h1 class="title">Set timer interval.</h1>
+		</header>
+		<div class="content">
+			<form>
+				<input id="time" type="number" min="5" max="90" step="5" value="60">
+				<button type="button" id="save" class="btn btn-primary btn-block">Start</button>
+				<button type="button" id="quit" class="btn btn-negative btn-block">Quit</button>
+			</form>
+
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
