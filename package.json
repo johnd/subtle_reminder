@@ -1,6 +1,6 @@
 {
   "name": "subtle-reminder-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Subtle timer/reminder app",
   "dependencies": {
     "electron-store": "^3.2.0",
@@ -13,7 +13,7 @@
   },
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager . 'Subtle Reminder' --platform=darwin --arch=x64 --version=0.36.0 --icon=subtle_reminder.icns",
+    "build": "electron-packager . 'Subtle Reminder' --platform=darwin --arch=x64 --electron-version=0.36.0 --icon=subtle_reminder.icns",
     "start": "electron ."
   }
 }

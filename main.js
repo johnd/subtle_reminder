@@ -42,6 +42,7 @@ function expire_timer() {
 function start_timer(time) {
 	if (!running) {
 		running = true;
+		mb.tray.setImage(path.join(__dirname, 'images', 'untriggered.png'));		
 		console.log("Running timer for " + time + " minutes...");
 		setTimeout(expire_timer, time * 1000 * 60);
 	}
@@ -49,7 +50,7 @@ function start_timer(time) {
 
 mb.on('show', function () {
 	if ( !running ) {
-		mb.tray.setImage(path.join(__dirname, 'images', 'untriggered.png'));
+		mb.tray.setImage(path.join(__dirname, 'images', 'unconfigured.png'));
 	}
 })
 
